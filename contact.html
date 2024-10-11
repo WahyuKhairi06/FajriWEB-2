@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="manifest" href="manifest.json">
+    <script src="./app.js"></script>
+
+    <style>
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: rgb(0, 183, 255);
+            padding: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            transition: all;
+            transition-duration: 150ms;
+        }
+
+        body {
+            background-image: url("contact.png");
+            background-size: 100%;
+        }
+
+        h1 {
+            color: azure;
+            text-align: center;
+        }
+
+        p {
+            color: aliceblue;
+            text-align: center;
+        }
+
+        form {
+            color: aliceblue;
+            text-align: center;
+            
+            
+        }
+
+        .centered-script {
+            text-align: center;
+            
+        }
+        nav ul li a:hover{
+            color: rgb(255, 0, 0);
+            text-decoration: underline #000000 3px;
+        }
+        .M{
+            margin-top: 120px;
+
+        }
+       
+
+        
+
+    </style>
+</head>
+<body>
+   
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+       
+    </nav>
+    <main class = "M">
+        <h1>Contact Us</h1>
+        <p>
+            Alamat : Kampus UNAND <br>
+            No telp.: 083807556588
+        </p>
+        <form id="contact-form">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="kategori">Kategori:</label>
+            <select id="kategori" name="kategori">
+                <option value="pertanyaan">Pertanyaan</option>
+                <option value="saran">Saran</option>
+                <option value="masalah">Masalah</option>
+            </select><br><br>
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            <label for="response">Apakah kamu ingin balasan?</label>
+            <input type="radio" id="response-yes" name="response" value="yes">
+            <label for="response-yes">Ya</label>
+            <input type="radio" id="response-no" name="response" value="no">
+            <label for="response-no">Tidak</label><br><br>
+            <input type="submit" value="Kirim Pesan">
+        </form>
+        <div id="form-response"></div>
+
+        
+    </main>
+    
+</body>  
+</html>
